@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Resume</title>
+
+    <script>
+        function sideMenu() {
+            var x = document.getElementById("idsidebar");
+            if (x.className.indexOf("w3-show") == -1){
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+    <style >
+        .container{
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            padding-top: 56.25%;
+        }
+        
+        .responsive-iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border:none;
+
+        }
+
+        .responsive{
+            max-width: 100%;
+            height: 100%;
+            background-size: cover;
+        }     
+    </style>
+   
+</head>
+
+<body>
+    
+    <div class ="w3-bar w3-orange">
+        <a  href="#profile" class = "w3-bar-item w3-button w3-hide-small w3-right">Profile</a>
+        <a  href="#education" class = "w3-bar-item w3-button w3-hide-small w3-right">Education</a>
+        <a  href="#experience"class = "w3-bar-item w3-button w3-hide-small w3-right" >Experience</a>
+        <a  href="#skills"class = "w3-bar-item w3-button w3-hide-small w3-right">Skills</a>
+        <a  href="#achievement"class = "w3-bar-item w3-button w3-hide-small w3-right">Achievement</a>
+        <a  href="#details"class = "w3-bar-item w3-button w3-hide-small w3-right">Details</a>
+        <a  href="javascript:void(0)" class = "w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="sideMenu()">&#9776;</a>
+    </div>
+
+    <div id="idsidebar" class ="w3-bar-block w3-orange w3-hide w3-hide-large w3-hide-medium">
+        <a  href="#profile" class = "w3-bar-item w3-button w3-right">Profile</a>
+        <a  href="#education" class = "w3-bar-item w3-button w3-right">Education</a>
+        <a  href="#experience" class = "w3-bar-item w3-button w3-right">Experience</a>
+        <a  href="#skills" class = "w3-bar-item w3-button w3-right">Skills</a>
+        <a  href="#achievement" class = "w3-bar-item w3-button w3-right">Achievement</a>
+        <a  href="#details" class = "w3-bar-item w3-button w3-right">Details</a>
+    </div>
+
+    <!--SETTING UP BANNER-->
+    <header class="w3-header w3-container w3-padding-24 w3-center">   
+        <image src="banner.png" class="responsive" width="1200" height="480">
+    </header>
+
+    <!--SETTING UP PROFILE SECTION-->
+    <div id="profile" class="w3-container w3-row w3-light-grey w3-padding-32">
+        <div class="w3-display-container w3-third w3-center" style ="height: 300px;">
+            <image src ="pics.png"  height = "250px">
+        </div>
+
+        <div class="w3-container w3-twothird">
+            <h2 style="font-size: 30;">Profile</h2>
+            <p style="font-style:italic;">Hardworking College Student from University Utara Malaysia in Bachelor of Science (Information Technology) seeking employment as a Software Engineer.
+                Experience in creating software mainly in Java and skillful with HTML and JavaScript. Bringing forth a motivated attitude and tons of variety in powerful skills. Adept in various office technology programs by the university and programming language. Committed to utilize my skills to enhance the development of the company.</p>
+        </div>
+    </div>
+
+    <!--SETTING UP EDUCATION SECTION-->
+    <div id="education" class="w3-container w3-row w3-orange w3-padding-32">
+        <div class="w3-container w3-third">
+            <h2 style="font-size: 30;">Education</h2>
+            <ul>
+                <li><b>2014 - 2018</b><br>Sijil Pelajaran Malaysia(SPM) - 2A, 3B, 4C<br>SMK Puchong Perdana</li>
+                <br><li><b>2019 - 2020</b><br>Pure Sciences - CGPA : 3.38<br>Negeri Sembilan College Matriculation</li>
+                <br><li><b>2020 - Present</b><br>Bachelor of Science (Information Technology) - CGPA : 3.74 (Semester 3)<br>University Utara Malaysia</li>
+                
+            </ul>
+        </div>
+
+        <div class="w3-display-container w3-twothird w3-padding-24" style ="height: 300px;">
+            <i class="fa fa-book w3-display-middle w3-padding" style = "font-size: 128px;"></i>
+        </div>
+    </div>
+
+    <!--SETTING UP EXPERIENCE SECTION-->
+    <div id="experience" class="w3-container w3-row w3-light-grey w3-padding-32">
+
+        <div class="w3-display-container w3-third w3-padding-24" style ="height: 300px;">
+            <i class="fa fa-edit w3-display-middle w3-padding" style="font-size:128px"></i>
+        </div>
+
+        <div class="w3-container w3-twothird">
+            <h2 style="font-size: 30;">Experiences</h2>
+            <ul>
+                <li><b>Java </b><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></li>
+                <br><li><b>JavaScript </b><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></li>
+                <br><li><b>PHP  </b><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></li>
+                <br><li><b>MYSQL </b><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></li>
+                <br><li><b>HTML </b><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <!--SETTING UP SKILLS SECTION-->
+    <div id="skills" class="w3-container w3-row w3-orange w3-padding-32">
+        <div class="w3-container w3-third">
+            <h2 style="font-size: 30;"> Skills</h2>
+            <ul>
+                <li><b>Logical Thinking and Problem Solving</b></li>
+                <br><li><b>Patience and Determination</b></li>
+                <br><li><b>Software Debugging</b></li>
+                <br><li><b>Oral and Written Communication</b></li>
+                <br><li><b>Coding</b></li>
+                <br><li><b>Computer programming</b></li> 
+            </ul>
+        </div>
+
+        <div class="w3-display-container w3-twothird w3-padding-24" style ="height: 300px;">
+            <i class="fa fa-crosshairs w3-display-middle w3-padding" style = "font-size: 128px;"></i>
+        </div>
+    </div>
+
+    <!--SETTING UP ACHIEVEMENT SECTION-->
+    <div id="achievement" class="w3-container w3-row w3-light-grey w3-padding-32">
+
+        <div class="w3-display-container w3-third w3-padding-24" style ="height: 300px;">
+            <i class="fa fa-university w3-display-middle w3-padding" style="font-size:128px"></i>
+        </div>
+
+        <div class="w3-container w3-twothird">
+            <h2 style="font-size: 30;">Achievements</h2>
+            <ul>
+                <li><b>2021 - Present</b><ul>
+                    <li>Dean's Certificate of Honour Student in Semester 1 & 2</li>
+                    <li>Exco Spirituality & Welfare, Club I-Tech UUM</li>
+                    <li>Director MAJORING TALK 2020/2021 Program (I-TECH UUM)</li>
+                </ul></li>
+                <br><li><b>2020</b><ul>
+                    <li>MT Cyber Security Talk Program(I-TECH UUM)</li>
+                    <li>MT A.I TALK Program (I-TECH UUM)</li>
+                </ul></li>
+                <br><li><b>2018</b><ul>
+                    <li>Member of the Highest Council Committee Prefect in SMK Puchong Perdana</li>
+                    <li>Participate in Invention of Innovation Competition, district level in SMK Puchong Perdana</li>
+                </ul></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--SETTING UP FOOTER WITH DETAILS SECTION-->
+    <footer id="details" class="w3-container w3-row w3-black w3-padding-32">
+        <div class="w3-container w3-twothird">
+            <h2 style="font-size: 30;">Details &nbsp;<i class="fa fa-info"></i></h2>
+            <p><i class="fa fa-male"></i>&nbsp;Mohammad Aiman Bin Mohammad Yuri</p>
+            <p><i class="fa fa-sticky-note"></i>&nbsp;Matric No : 280752</p>
+            <p><i class="fa fa-phone"></i>&nbsp;016-2710202</p>
+            <p><i class="fa fa-mail-forward"></i>&nbsp;aemanmy@gmail.com</p>
+            <p><i class="fa fa-github"></i>&nbsp;https://github.com/aimanmy</p>
+            
+
+        </div>
+
+        <div class="w3-container w3-third ">
+            <div>
+                <p><i class="fa fa-location-arrow"></i>&nbsp;Location</p>
+                <div class="w3-container">
+                    <iframe class="responsive"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.4168149858947!2d101.59813795018651!3d2.98172429781778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdb39114c13603%3A0xc87768a6c22092f6!2s16%2C%20Jalan%20Tasik%20Prima%204%2F5a%2C%20Lake%20Vista%2C%2047150%20Puchong%2C%20Selangor!5e0!3m2!1sen!2smy!4v1651396053708!5m2!1sen!2smy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <p>No 16, Jalan Tasik Prima,<br>4/5A, Taman Tasik Prima,<br>47150 Puchong,<br>Selangor.</p>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
